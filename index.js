@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const { PORT = 3000 } = process.env;
 const express = require('express');
 const server = express();
@@ -24,4 +25,4 @@ server.use((req, res, next) => {
     console.log("<_____Body Logger END_____>");
   
     next();
-  });
+});
